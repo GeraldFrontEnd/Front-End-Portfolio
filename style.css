@@ -1,0 +1,178 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;   
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.container{
+    background-color: black; 
+    width: 100%;
+    margin-right: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 25px;
+    padding-bottom: 10px;
+    margin: auto;
+
+}
+
+#logo{
+    width: 200px;
+    height: 75px;
+    padding: 0px 25px;
+    float: left;
+}
+
+/* Nav Section Style Code */
+
+nav{
+    height: 100px;
+
+}
+
+nav ul{
+
+    line-height: 20px;
+ 
+    height: 150px;
+}
+
+nav ul li{
+   display: inline-block;
+}
+
+
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    margin: 0px 75px;
+    padding: 7px 15px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    position:relative;
+    float:right;
+    border: 2px red
+}
+
+a:hover{
+    background-color: red;
+    transition: 1s;
+    border-radius: 4px;
+    padding-bottom: 10px;
+}
+/* ACTIVE IS FOR CREATING A STATICS Button */
+
+
+.active{
+    background-color: orange;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+
+.icon{
+   margin-left: 5px;
+    color: red;
+    text-decoration-line: underline;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+
+/* Media Queries section for breakdown to remove display when size drops below max-width of  */
+@media screen and (max-width: 600px) {
+    h2{
+        display: none;
+    }
+    #logo{
+        display:none;
+    }
+
+    .container{
+        text-align: center;
+        background-color: rgb(133, 132, 132);
+    }
+
+    .icon{
+        color: rgb(133, 132, 132);
+        
+    }
+
+    nav ul li a{
+        font-weight: 12px;
+        font-style: bold;
+        letter-spacing: 2px;
+        text-decoration: overline;
+    }
+    
+}
+
+@media screen and (max-width: 350px){
+    nav ul li a{
+        display: none;
+    }
+
+
+    .Gallery-content{
+        text-align: center;
+        margin: 50px;
+        font-weight: bold;
+        font-display:inherit;
+    }
+
+    #description1{
+        flex-direction: row;
+    }
+ 
+}
+    
+/* Styling Section for the body or gallery area */
+.Gallery{
+    height: calc(100px - 75px);
+    border: px solid red;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+#description1{
+    font-size: 12.5px;
+    font-style: bold;
+    text-decoration: dotted;
+    background-color: bisque;
+    word-spacing: 27px;
+}
+
+#description2{
+    font-size: 12.5px;
+    font-style: bold;
+    text-decoration: dotted;
+    background-color: bisque;
+  
+}
+
+
+#description3{
+    font-size: 12.5px;
+    font-style: bold;
+    text-decoration: dotted;
+    background-color: bisque;
+    word-spacing: 10px;
+    padding-bottom: 25px;
+}
+    
+
+
+
+/* Styling for showcase */
